@@ -9,6 +9,6 @@ png('plot1.png')
 # filter data frame and plot to screen
 df$Date <- as.Date(df$Date, '%d/%m/%Y')
 df <- df[df$Date %in% as.Date(c('2007-02-01', '2007-02-02')), ]
-with(df, hist(Global_active_power, main = 'Global Active Power', xlab = 'Global Active Power (kilowatts)', col='red'))
+with(df, hist(Global_active_power, main = 'Global Active Power', xlab = 'Global Active Power (kilowatts)', col = 'red'))
 
 dev.off()
